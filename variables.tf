@@ -94,3 +94,27 @@ variable "instance_name" {
   type        = string
   default     = "vm-meetup"
 }
+
+variable "ami_most_recent" {
+  description = "Buscar a AMI mais recente"
+  type        = bool
+  default     = true
+}
+
+variable "ami_owners" {
+  description = "Lista de proprietários da AMI"
+  type        = list(string)
+  default     = ["amazon"]
+}
+
+variable "ami_name_filter" {
+  description = "Filtro de nome para buscar a AMI"
+  type        = list(string)
+  default     = ["amzn2-ami-hvm-*-x86_64-gp2"]
+}
+
+variable "ami_virtualization_filter" {
+  description = "Filtro de tipo de virtualização"
+  type        = list(string)
+  default     = ["hvm"]
+}
