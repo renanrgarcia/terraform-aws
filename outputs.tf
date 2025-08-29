@@ -12,3 +12,5 @@ output "vm_public_ip" {
   description = "IP público da instância EC2"
   value       = aws_instance.vm.public_ip
 }
+
+// Traz essas informações ao fim da criação

@@ -53,3 +53,5 @@ resource "aws_security_group" "vm_sg" {
     cidr_blocks = var.egress_cidr
   }
 }
+
+// Configurações de rede

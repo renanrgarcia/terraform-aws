@@ -118,3 +118,5 @@ variable "ami_virtualization_filter" {
   type        = list(string)
   default     = ["hvm"]
 }
+
+// Armazena as variáveis para a criação da infraestrutura
